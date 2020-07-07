@@ -28,5 +28,4 @@ client.on("message", message => {
       canal.send(args[1]);
     }
   });
-
 client.login('NzMwMTAyNDUyNjU2OTMwOTg3.XwSnUw.PhXOXQWzpaUVv8xME_VeKVzRwfk');
