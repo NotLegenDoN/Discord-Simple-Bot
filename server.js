@@ -13,7 +13,7 @@ client.on('message', msg => {
   }
     var PREFIX = "!";
       if(message.content.startsWith(PREFIX+"say")){
-        const args = message.content.split(",");
+        const args = message.content.split(".");
         let canal = message.mentions.channels.first();
         if(!args[1]){
           return message.channel.send("¿Qué mensaje quieres que envie?");
