@@ -17,7 +17,7 @@ client.on('ready', () => {
      client.user.setActivity(activities_list[index],{
         type: "PLAYING"
       });
-    }, 500);
+    }, 50);
  
 });
 
