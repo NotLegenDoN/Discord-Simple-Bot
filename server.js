@@ -41,5 +41,28 @@ client.on("message", message => {
   });
 
   ///bienvenida/////
+  client.on('guildMemberAdd', (member) => {
+    let embedwelcome = new MessageEmbed() 
+       .setThumbnail(member.user.displayAvatarURL)
+       .setAuthor(` Bienvenido ${member.user.username}`,"https://cdn.discordapp.com/emojis/680807826981257218.gif?v=1")
+       .setDescription(`**¡Bienvenido a ${member.guild.name} !**
+Recuerda visitar el canal <#711726526571216946> para no tener problemas `)
+       .setFooter(`Eres em miembro numero${member.guild.memberCount}`)
+       .setColor("RANDOM") 
+     let channel = client.channels.get('711726527431049239'); 
+     channel.send(embedwelcome); 
+  
+  });
   ///despedida/////
+  client.on('guildMemberRemove', (member) => {
+    let embedbye = new MessageEmbed() 
+       .setThumbnail(member.user.displayAvatarURL)
+       .setDescription(`${+member.guild.name}se nos fué`)
+       .setFooter(`Total de miembros${member.guild.memberCount}`)
+       .setColor("RANDOM") 
+     let channel = client.channels.get('711726527431049240'); 
+     channel.send(embedbye); 
+  
+  });
+  ////////////////////////////////////////////
 client.login('NzMwMTAyNDUyNjU2OTMwOTg3.XwSnUw.PhXOXQWzpaUVv8xME_VeKVzRwfk');
