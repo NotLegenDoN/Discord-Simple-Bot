@@ -4,20 +4,18 @@ const { Client, MessageEmbed, Message  } = require("discord.js");
 const client = new Client();
 
 client.on('ready', () => {
-  console.log(`BROU ESTOY LISTO`)
+  console.log(`ACTIVO`);
   const activities_list = [
-    "CASTIGAR A VERA"
+    "CASTIGAR",
   ];
-
   setInterval(() => {
-    const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+    const index = Math.floor(Math.random() * (activities_list.length) )
 
-    client.user.setActivity(activities_list[index],{
+   client.user.setActivity(activities_list[index],{
       type: "PLAYING"
     });
-  }, 5000);
+  }, 500);
 });
- 
 
 
 
