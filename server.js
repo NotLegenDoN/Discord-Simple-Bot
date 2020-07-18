@@ -23,17 +23,6 @@ client.on('ready', () => {
 
 
 /////////////////////////////////
-///NO MENCIONAR///
-client.on("message", message =>{
-  if(message.content === ("<@633798999476011013>")){
-    const mencion = new MessageEmbed()
-    .setTitle("EJEMMMMMMMMMMMMMMMMMMMMM")
-    .setColor(0xDB2700)
-    .setDescription("NO MENCIONES A DIOSITO")
-    .addField("O te CaStiGaRÁ", "pam pam pammmmmm")
-     message.channel.send(mencion)
-    }
-  });
 /////!say .mensaje. #channel///////////
 client.on("message", message => {
   var PREFIX = "!";
