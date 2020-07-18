@@ -3,7 +3,21 @@
 const { Client, MessageEmbed, Message  } = require("discord.js");
 const client = new Client();
 
+client.on('ready', () => {
+  console.log(`TE PUEDO CHUPAR UN OJO ${client.user.tag}?`)
+  const activities_list = [
+    "CASTIGAR A VERA", 
+  ];
 
+  setInterval(() => {
+    const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+
+    client.user.setActivity(activities_list[index],{
+      type: "PLAYING"
+    });
+  }, 5000);
+});
+ 
 
 
 
