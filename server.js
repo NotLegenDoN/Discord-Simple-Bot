@@ -8,8 +8,7 @@ const client = new Client();
 client.on('ready', () => {
   console.log(`ACTIVO`);
     const activities_list = [
-      "CASTIGANDO",
-      "MAIKRA",
+      "CASTIGANDO"
     ];
     setInterval(() => {
       const index = Math.floor(Math.random() * (activities_list.length) )
