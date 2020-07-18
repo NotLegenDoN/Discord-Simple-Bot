@@ -22,22 +22,18 @@ client.on('ready', () => {
 });
 
 ///NO MENCIONAR///
-
-client.on("message", message => {
-
-        var BATATA = "633798999476011013"
-
-      if (message.mentions.has(NOMENCIONAR) || message.mentions.has(BATATA) || message.mentions.has(PLAYER)){
-        if (!message.member.roles.cache.find(roles => roles.id === BATATA)) {
-        message.delete()
-        const mencion= new MessageEmbed()
-        .setTitle("ejemmmmmmmmmmmmm")
-        .addField("**NO MENCIONES A DIOCITO**", "O TE PEGARÁ")
-        message.channel.send(mencion);
-      }
-  }});
-
-
+client.on("message", message =>{
+  if(message.content === ("<@633798999476011013>")){
+    const mencion = new MessageEmbed()
+    .setTitle("EJEMMMMMMMMMMMMMMMMMMMMM")
+    .setColor(0xDB2700)
+    .setDescription("NO MENCIONES A DIOSITO")
+    .addField("O te CaStiGaRÁ", "pam pam pammmmmm")
+     message.channel.send(mencion)
+    }
+  });
+  
+  
 
 
 
