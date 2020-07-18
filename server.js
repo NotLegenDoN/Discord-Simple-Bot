@@ -1,12 +1,23 @@
 
-//////////bot real/////////////
+
 const { Client, MessageEmbed, Message  } = require("discord.js");
 const client = new Client();
 
-client.on('ready', () => {
-  console.log(`LISTO`);
-});
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////
 /////!say .mensaje. #channel///////////
 client.on("message", message => {
   var PREFIX = "!";
