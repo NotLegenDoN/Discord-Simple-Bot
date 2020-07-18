@@ -7,12 +7,7 @@ client.on('ready', () => {
   console.log(`LISTO`);
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
+/////!say .mensaje. #channel///////////
 client.on("message", message => {
   var PREFIX = "!";
     if(message.content.startsWith(PREFIX+"say")){
@@ -28,4 +23,7 @@ client.on("message", message => {
       canal.send(args[1]);
     }
   });
+
+  ///bienvenida/////
+  ///despedida/////
 client.login('NzMwMTAyNDUyNjU2OTMwOTg3.XwSnUw.PhXOXQWzpaUVv8xME_VeKVzRwfk');
