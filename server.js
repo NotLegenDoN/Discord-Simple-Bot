@@ -25,7 +25,7 @@ client.on('ready', () => {
 
 client.on("message", message => {
 
-        var BATATA = "537545378673721344"
+        var BATATA = "633798999476011013"
 
       if (message.mentions.has(NOMENCIONAR) || message.mentions.has(BATATA) || message.mentions.has(PLAYER)){
         if (!message.member.roles.cache.find(roles => roles.id === BATATA)) {
