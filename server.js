@@ -30,10 +30,10 @@ client.on("message", message => {
       if (message.mentions.has(NOMENCIONAR) || message.mentions.has(BATATA) || message.mentions.has(PLAYER)){
         if (!message.member.roles.cache.find(roles => roles.id === BATATA)) {
         message.delete()
-        const menciones = new MessageEmbed()
+        const mencion= new MessageEmbed()
         .setTitle("ejemmmmmmmmmmmmm")
         .addField("**NO MENCIONES A DIOCITO**", "O TE PEGARÁ")
-        message.channel.send(menciones).then(message => message.delete({timeout: 10000}));
+        message.channel.send(mencion);
       }
   }});
 
