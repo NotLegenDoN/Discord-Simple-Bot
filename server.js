@@ -21,6 +21,8 @@ client.on('ready', () => {
  
 });
 
+
+/////////////////////////////////
 ///NO MENCIONAR///
 client.on("message", message =>{
   if(message.content === ("<@633798999476011013>")){
@@ -32,20 +34,6 @@ client.on("message", message =>{
      message.channel.send(mencion)
     }
   });
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-/////////////////////////////////
 /////!say .mensaje. #channel///////////
 client.on("message", message => {
   var PREFIX = "!";
