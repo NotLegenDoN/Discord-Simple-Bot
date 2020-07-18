@@ -4,9 +4,9 @@ const { Client, MessageEmbed, Message  } = require("discord.js");
 const client = new Client();
 
 client.on('ready', () => {
-  console.log(`TE PUEDO CHUPAR UN OJO ${client.user.tag}?`)
+  console.log(`BROU ESTOY LISTO`)
   const activities_list = [
-    "CASTIGAR A VERA", 
+    "CASTIGAR A VERA"
   ];
 
   setInterval(() => {
