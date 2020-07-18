@@ -3,19 +3,22 @@
 const { Client, MessageEmbed, Message  } = require("discord.js");
 const client = new Client();
 
-function presence(){
-  client.user.setPresence({
-    status: "online",
-    activity: {
-      name: "CASTIGANDO",
-      type: "PLAYING"
-    }
-  });
-}
+
 
 client.on('ready', () => {
-  console.log("READY");
-  presence();  
+  console.log(`ACTIVO`);
+    const activities_list = [
+      "CASTIGANDO",
+      "MAIKRA",
+    ];
+    setInterval(() => {
+      const index = Math.floor(Math.random() * (activities_list.length) )
+  
+     client.user.setActivity(activities_list[index],{
+        type: "PLAYING"
+      });
+    }, 500);
+ 
 });
 
 
