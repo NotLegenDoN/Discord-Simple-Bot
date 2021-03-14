@@ -65,4 +65,4 @@ Recuerda visitar el canal <#ID DEL CANAL DE REGLAS> para no tener problemas `)
   
   });
   ////////////////////////////////////////////
-client.login('NzMwMTAyNDUyNjU2OTMwOTg3.XwSnUw.PhXOXQWzpaUVv8xME_VeKVzRwfk');
+client.login('aqui va tu TOKEN');
