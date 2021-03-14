@@ -1,9 +1,7 @@
-
-
-const { Client, MessageEmbed, Message  } = require("discord.js");
+const { Client, MessageEmbed, Message  } = require("discord.js");//REQUERIMOS DISCORD.JS (npm i discord.js --save)
 const client = new Client();
 
-
+//Si tienes alguna duda o necesitas ayuda en la creación de tu bot contactame NotLegenDoN#0320
 
 client.on('ready', () => {
   console.log(`ACTIVO`);
