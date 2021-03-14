@@ -8,13 +8,16 @@ const client = new Client();
 client.on('ready', () => {
   console.log(`ACTIVO`);
     const activities_list = [
-      "CASTIGAR"
+      `Activity1`,
+      `Activiti2`,
+      `Activity3`
+      //puedes anãdir quantas actividades quieras
     ];
     setInterval(() => {
       const index = Math.floor(Math.random() * (activities_list.length) )
   
      client.user.setActivity(activities_list[index],{
-        type: "PLAYING"
+        type: "PLAYING" 
       });
     }, 50);
  
@@ -45,10 +48,10 @@ client.on("message", message => {
        .setThumbnail(member.user.displayAvatarURL)
        .setAuthor(` Bienvenido ${member.user.username}`,"https://cdn.discordapp.com/emojis/680807826981257218.gif?v=1")
        .setDescription(`**¡Bienvenido a ${member.guild.name} !**
-Recuerda visitar el canal <#711726526571216946> para no tener problemas `)
-       .setFooter(`Eres em miembro numero${member.guild.memberCount}`)
+Recuerda visitar el canal <#ID DEL CANAL DE REGLAS> para no tener problemas `)
+       .setFooter(`Eres em miembro numero ${member.guild.memberCount}`)
        .setColor("RANDOM") 
-     let channel = client.channels.get('711726527431049239'); 
+     let channel = client.channels.get('ID DEL CANAL DE BIENVENIDAS'); 
      channel.send(embedwelcome); 
   
   });
@@ -56,10 +59,10 @@ Recuerda visitar el canal <#711726526571216946> para no tener problemas `)
   client.on('guildMemberRemove', (member) => {
     let embedbye = new MessageEmbed() 
        .setThumbnail(member.user.displayAvatarURL)
-       .setDescription(`${+member.guild.name}se nos fué`)
-       .setFooter(`Total de miembros${member.guild.memberCount}`)
+       .setDescription(`${+member.guild.name} se nos fué`)
+       .setFooter(`Total de miembros ${member.guild.memberCount}`)
        .setColor("RANDOM") 
-     let channel = client.channels.get('711726527431049240'); 
+     let channel = client.channels.get('ID DEL CANAL DE DESPEDIDAS'); 
      channel.send(embedbye); 
   
   });
